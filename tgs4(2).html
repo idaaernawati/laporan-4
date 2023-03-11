@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Double Klik</title>
+  <script src="jquery.js"></script>
+  <style>
+  div {
+    background: yellow;
+    color: white;
+    height: 70px;
+    width: 80px;
+ }
+  .kotak1{
+    background: red;
+    color: black;
+  }
+  .kotak2 {
+    background: red;
+    color: black;
+  }
+  .kotak3 {
+    background: red;
+    color: black;
+  }
+  .kotak4 {
+    background: red;
+    color: black;
+  }
+  </style>
+  </head>
+  <body>
+<text style="font-size: 18px">klik 2x pada setiap kotak untuk mengubah warnanya</text> <br><br>
+<div class="div1"></div>
+<div class="div2" style="margin-left: 7%; margin-top: -70px"></div>
+<div class="div3" style="margin-left: 14%; margin-top: -70px"></div>
+<div class="div4" style="margin-left: 21%; margin-top: -70px"></div>
+
+<script type="text/javascript">    
+    var divkotak1 = $(".div1").first();
+divkotak1.dblclick(function() {
+  divkotak1.toggleClass("kotak1");
+});
+var divkotak2 = $(".div2").first();
+divkotak2.dblclick(function() {
+  divkotak2.toggleClass("kotak2");
+});
+var divkotak3 = $(".div3").first();
+divkotak3.dblclick(function() {
+  divkotak3.toggleClass("kotak3");
+});
+var divkotak4 = $(".div4").first();
+divkotak4.dblclick(function() {
+  divkotak4.toggleClass("kotak4");
+});
+  </script>
+  </body>
+</html>

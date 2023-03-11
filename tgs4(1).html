@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tombol Sembunyi dan Tampilkan </title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	// Ketika tombol sembunyi diklik
+	$(".sembunyi1").click(function() {
+		$("#gambar1").hide("slow");
+	});
+
+	$(".sembunyi2").click(function() {
+		$("#gambar2").hide("slow");
+	});
+
+	$(".sembunyi3").click(function() {
+		$("#gambar3").hide("slow");
+	});
+
+	// Ketika tombol tampilkan diklik
+	$(".tampilkan1").click(function() {
+		$("#gambar1").show("slow");
+	});
+
+	$(".tampilkan2").click(function() {
+		$("#gambar2").show("slow");
+	});
+
+	$(".tampilkan3").click(function() {
+		$("#gambar3").show("slow");
+	});
+});
+</script>
+</head>
+<body>	
+<button class="sembunyi1">Sembunyikan</button>
+<button class="tampilkan1">Tampilkan</button>
+<p><img id="gambar1" src="ornament lampu gypsum 1.jpg" style="height: 220px; width: 210px;"></p>
+<button class="sembunyi2">Sembunyikan</button>
+<button class="tampilkan2">Tampilkan</button>
+<p><img id="gambar2" src="ornament lampu gypsum 2.jpg" style="height: 220px; width: 210px;"></p>
+<button class="sembunyi3">Sembunyikan</button>
+<button class="tampilkan3">Tampilkan</button>
+<p><img id="gambar3" src="ornament lampu gypsum 3.jpg" style="height: 220px; width: 210px;"></p>
+</body>
+</html>
